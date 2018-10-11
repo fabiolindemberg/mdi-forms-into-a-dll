@@ -34,13 +34,8 @@ begin
     Screen := Sc;
   end;
 
-  if Form = nil then
-  begin
-    Form := TFMDIChild.Create(Application);
-    Form.SetParentComponent(Application.MainForm);
-    Form.WindowState := wsMaximized;
-  end;
-
+  Form := TFMDIChild.Create(Application);
+  Form.SetParentComponent(Application.MainForm);
   Form.Show;
 
 end;

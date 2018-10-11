@@ -4,13 +4,10 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, DB, DBClient, Grids, DBGrids;
+  Dialogs;
 
 type
   TFMDIChild = class(TForm)
-    ClientDataSet: TClientDataSet;
-    DataSource: TDataSource;
-    DBGrid1: TDBGrid;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
   private
     { Private declarations }
