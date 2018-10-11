@@ -1,0 +1,48 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{B7221B0E-91B7-4B69-8B5E-AC945C30F532}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="dll-project\MdiForms.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="mdi-application\MDIAPP.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="MdiForms">
+			<MSBuild Projects="dll-project\MdiForms.dproj"/>
+		</Target>
+		<Target Name="MdiForms:Clean">
+			<MSBuild Targets="Clean" Projects="dll-project\MdiForms.dproj"/>
+		</Target>
+		<Target Name="MdiForms:Make">
+			<MSBuild Targets="Make" Projects="dll-project\MdiForms.dproj"/>
+		</Target>
+		<Target Name="MDIAPP">
+			<MSBuild Projects="mdi-application\MDIAPP.dproj"/>
+		</Target>
+		<Target Name="MDIAPP:Clean">
+			<MSBuild Targets="Clean" Projects="mdi-application\MDIAPP.dproj"/>
+		</Target>
+		<Target Name="MDIAPP:Make">
+			<MSBuild Targets="Make" Projects="mdi-application\MDIAPP.dproj"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="MdiForms;MDIAPP"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="MdiForms:Clean;MDIAPP:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="MdiForms:Make;MDIAPP:Make"/>
+		</Target>
+		<Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+	</Project>

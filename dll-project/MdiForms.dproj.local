@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/10/11 16:36:17.437.dproj,D:\Users\fabio.lindemberg.WPD\Documents\RAD Studio\Projects\Project1.dproj=D:\Users\fabio.lindemberg.WPD\Documents\RAD Studio\Projects\mdi-forms-into-a-dll\dll-project\MdiForms.dproj</Transaction>
+    <Transaction>2018/10/11 16:37:45.814.pas,D:\Users\fabio.lindemberg.WPD\Documents\RAD Studio\Projects\mdi-forms-into-a-dll\dll-project\Unit1.pas=D:\Users\fabio.lindemberg.WPD\Documents\RAD Studio\Projects\mdi-forms-into-a-dll\src\UMDIChild.pas</Transaction>
+    <Transaction>2018/10/11 16:37:45.814.dfm,D:\Users\fabio.lindemberg.WPD\Documents\RAD Studio\Projects\mdi-forms-into-a-dll\dll-project\Unit1.dfm=D:\Users\fabio.lindemberg.WPD\Documents\RAD Studio\Projects\mdi-forms-into-a-dll\src\UMDIChild.dfm</Transaction>
+  </Transactions>
+</BorlandProject>
